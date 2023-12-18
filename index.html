@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Play the Rock, Paper, Scissors game and enjoy a fun and interactive experience. Learn the game rules and challenge the computer to see who wins!"
+    />
+    <title>Rock, Paper & Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./assets/rock-paper-scissors.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="top-left">ROCK PAPER SCISSORS</div>
+        <div class="top-right">
+          <div class="score">
+            <p>COMPUTER SCORE</p>
+            <p id="com-score">0</p>
+          </div>
+          <div class="score">
+            <p>YOUR SCORE</p>
+            <p id="my-score">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bottom-up">
+          <button class="rock">
+            <img src="assets/icons8-fist-67 1.png" alt="rock" />
+          </button>
+          <button class="scissor">
+            <img src="assets/17911 1.png" alt="scissors" />
+          </button>
+        </div>
+        <button class="paper">
+          <img src="assets/icons8-hand-64 1.png" alt="paper" />
+        </button>
+        <div class="line line1" style="width: 200px"></div>
+        <div class="line line2" style="width: 150px"></div>
+        <div class="line line3" style="width: 150px"></div>
+      </div>
+      <div class="bottom-up result">
+        <div class="pick" id="player-color">
+          <p>YOU PICKED</p>
+          <img class="player-choice" src="" alt="player-picked" />
+          <div class="anim">
+            <div class="circle delay1"></div>
+            <div class="circle delay2"></div>
+            <div class="circle delay3"></div>
+            <div class="circle delay4"></div>
+          </div>
+        </div>
+        <div class="txt"></div>
+        <div class="pick" id="computer-color">
+          <p>PC PICKED</p>
+          <img class="computer-choice" src="" alt="computer-picked" />
+          <div class="anim">
+            <div class="circle delay1"></div>
+            <div class="circle delay2"></div>
+            <div class="circle delay3"></div>
+            <div class="circle delay4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="won">
+      <div class="pics">
+        <img src="./assets/Group 5.png" alt="stars" />
+        <img src="./assets/Vector.png" alt="cup" />
+      </div>
+      <h1>HURRAY!!</h1>
+      <h2>YOU WON THE GAME</h2>
+      <button>PLAY AGAIN</button>
+    </div>
+    <div id="rules-popup" class="rules-popup">
+      <div class="rules-content">
+        <span id="close-button" class="close-button">&times;</span>
+        <div>
+          <h2>Game Rules</h2>
+          <ul>
+            <li>
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <li>
+              Agree ahead of time whether you’ll count off “rock, paper,
+              scissors, shoot” or just “rock, paper, scissors.”
+            </li>
+            <li>
+              Use rock, paper, scissors to settle minor decisions or simply play
+              to pass the time
+            </li>
+            <li>
+              If both players lay down the same hand, each player lays down
+              another hand
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button class="rules" aria-label="View Rules">RULES</button>
+    <button class="next" aria-label="Next">NEXT</button>
+    <script src="script.js"></script>
+  </body>
+</html>
